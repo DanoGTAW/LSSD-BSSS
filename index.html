@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <title>FTOR Formatter</title>
+</head>
+<body>
+    <div class="ui container">
+        <div class="ui form">
+            <div class="ui segment">
+                <h2>Basic Information</h2>
+                <h4 class="ui dividing header">Patrol Information</h4>
+                <div class="field">
+                    <label>Date and Phase</label>
+                    <div class="three fields">
+                        <div class="field">
+                            <input type="text" name="date" placeholder="DD/MMM/YYYY">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="time" placeholder="HH:MM">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="phase" placeholder="Phase 1/2/3">
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">Personnel Information</h4>
+                <div class="field">
+                    <label>Field Training Officer</label>
+                    <div class="three fields">
+                        <div class="field">
+                            <input type="text" name="fto_first" placeholder="Firstname">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="fto_last" placeholder="Lastname">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="fto_serial" placeholder="Employee Number">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Trainee</label>
+                    <div class="three fields">
+                        <div class="field">
+                            <input type="text" name="trainee_first" placeholder="Firstname">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="trainee_last" placeholder="Lastname">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="trainee_serial" placeholder="Employee Number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Attitude</h2>
+                <div class="inline fields">
+                    <label for="field1" class="header">Acceptance of Feedback/Criticism:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field1" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field1" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field1" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field1" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field1" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="field2" class="header">Attitude toward Police Work:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field2" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field2" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field2" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field2" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field2" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="field3" class="header">Integrity/Ethics:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field3" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field3" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field3" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field3" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field3" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="field4" class="header">Leadership:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field4" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field4" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field4" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field4" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field4" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </
