@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="app.css">
-    <title>FTOR Formatter</title>
+    <title>SMEPR Formatter</title>
 </head>
 <body>
     <div class="ui container">
@@ -23,171 +23,1020 @@
                         <div class="field">
                             <input type="text" name="time" placeholder="HH:MM">
                         </div>
-                        <div class="field">
-                            <input type="text" name="phase" placeholder="Phase 1/2/3">
-                        </div>
                     </div>
                 </div>
                 <h4 class="ui dividing header">Personnel Information</h4>
                 <div class="field">
-                    <label>Field Training Officer</label>
+                    <label>Mentor</label>
                     <div class="three fields">
                         <div class="field">
-                            <input type="text" name="fto_first" placeholder="Firstname">
+                            <input type="text" name="mentor_first" placeholder="Firstname">
                         </div>
                         <div class="field">
-                            <input type="text" name="fto_last" placeholder="Lastname">
-                        </div>
-                        <div class="field">
-                            <input type="text" name="fto_serial" placeholder="Employee Number">
+                            <input type="text" name="mentor_last" placeholder="Lastname">
                         </div>
                     </div>
                 </div>
                 <div class="field">
-                    <label>Trainee</label>
+                    <label>Student</label>
                     <div class="three fields">
                         <div class="field">
-                            <input type="text" name="trainee_first" placeholder="Firstname">
+                            <input type="text" name="student_first" placeholder="Firstname">
                         </div>
                         <div class="field">
-                            <input type="text" name="trainee_last" placeholder="Lastname">
-                        </div>
-                        <div class="field">
-                            <input type="text" name="trainee_serial" placeholder="Employee Number">
+                            <input type="text" name="student_last" placeholder="Lastname">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="ui segment">
-                <h2>Attitude</h2>
+                <h2>Grading</h2>
                 <div class="inline fields">
-                    <label for="field1" class="header">Acceptance of Feedback/Criticism:</label>
+                    <label for="overall_performance" class="header">Overall Performance:</label>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field1" checked="" value="N/O" tabindex="0" class="hidden">
+                            <input type="radio" name="overall_performance" checked="" value="N/O" tabindex="0" class="hidden">
                             <label>Not Observed</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field1" value="C" tabindex="0" class="hidden">
+                            <input type="radio" name="overall_performance" value="C" tabindex="0" class="hidden">
                             <label>Competent</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field1" value="S" tabindex="0" class="hidden">
+                            <input type="radio" name="overall_performance" value="S" tabindex="0" class="hidden">
                             <label>Superior</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field1" value="N/I" tabindex="0" class="hidden">
+                            <input type="radio" name="overall_performance" value="N/I" tabindex="0" class="hidden">
                             <label>Needs Improvement</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field1" value="NRT" tabindex="0" class="hidden">
+                            <input type="radio" name="overall_performance" value="NRT" tabindex="0" class="hidden">
                             <label>Not Responding To Training</label>
                         </div>
                     </div>
                 </div>
                 <div class="inline fields">
-                    <label for="field2" class="header">Attitude toward Police Work:</label>
+                    <label for="basics" class="header">Basics:</label>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field2" checked="" value="N/O" tabindex="0" class="hidden">
+                            <input type="radio" name="basics" checked="" value="N/O" tabindex="0" class="hidden">
                             <label>Not Observed</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field2" value="C" tabindex="0" class="hidden">
+                            <input type="radio" name="basics" value="C" tabindex="0" class="hidden">
                             <label>Competent</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field2" value="S" tabindex="0" class="hidden">
+                            <input type="radio" name="basics" value="S" tabindex="0" class="hidden">
                             <label>Superior</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field2" value="N/I" tabindex="0" class="hidden">
+                            <input type="radio" name="basics" value="N/I" tabindex="0" class="hidden">
                             <label>Needs Improvement</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field2" value="NRT" tabindex="0" class="hidden">
+                            <input type="radio" name="basics" value="NRT" tabindex="0" class="hidden">
                             <label>Not Responding To Training</label>
                         </div>
                     </div>
                 </div>
                 <div class="inline fields">
-                    <label for="field3" class="header">Integrity/Ethics:</label>
+                    <label for="radio_procedure" class="header">Radio Procedure:</label>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field3" checked="" value="N/O" tabindex="0" class="hidden">
+                            <input type="radio" name="radio_procedure" checked="" value="N/O" tabindex="0" class="hidden">
                             <label>Not Observed</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field3" value="C" tabindex="0" class="hidden">
+                            <input type="radio" name="radio_procedure" value="C" tabindex="0" class="hidden">
                             <label>Competent</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field3" value="S" tabindex="0" class="hidden">
+                            <input type="radio" name="radio_procedure" value="S" tabindex="0" class="hidden">
                             <label>Superior</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field3" value="N/I" tabindex="0" class="hidden">
+                            <input type="radio" name="radio_procedure" value="N/I" tabindex="0" class="hidden">
                             <label>Needs Improvement</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field3" value="NRT" tabindex="0" class="hidden">
+                            <input type="radio" name="radio_procedure" value="NRT" tabindex="0" class="hidden">
                             <label>Not Responding To Training</label>
                         </div>
                     </div>
                 </div>
                 <div class="inline fields">
-                    <label for="field4" class="header">Leadership:</label>
+                    <label for="internal_relations" class="header">Internal Relations:</label>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field4" checked="" value="N/O" tabindex="0" class="hidden">
+                            <input type="radio" name="internal_relations" checked="" value="N/O" tabindex="0" class="hidden">
                             <label>Not Observed</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field4" value="C" tabindex="0" class="hidden">
+                            <input type="radio" name="internal_relations" value="C" tabindex="0" class="hidden">
                             <label>Competent</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field4" value="S" tabindex="0" class="hidden">
+                            <input type="radio" name="internal_relations" value="S" tabindex="0" class="hidden">
                             <label>Superior</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field4" value="N/I" tabindex="0" class="hidden">
+                            <input type="radio" name="internal_relations" value="N/I" tabindex="0" class="hidden">
                             <label>Needs Improvement</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="field4" value="NRT" tabindex="0" class="hidden">
+                            <input type="radio" name="internal_relations" value="NRT" tabindex="0" class="hidden">
                             <label>Not Responding To Training</label>
                         </div>
-                    </
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="management" class="header">Management:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="management" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="management" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="management" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="management" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="management" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="critical_incidents" class="header">Critical Incidents:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="critical_incidents" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="critical_incidents" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="critical_incidents" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="critical_incidents" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="critical_incidents" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="use_of_force" class="header">Use of Force:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="use_of_force" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="use_of_force" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="use_of_force" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="use_of_force" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="use_of_force" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="outside_agencies" class="header">Outside Agencies:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="outside_agencies" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="outside_agencies" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="outside_agencies" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="outside_agencies" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="outside_agencies" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="criminal_law_policies" class="header">Criminal Law & Policies:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="criminal_law_policies" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="criminal_law_policies" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="criminal_law_policies" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="criminal_law_policies" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="criminal_law_policies" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="out_of_character" class="header">(( Out of Character )):</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="out_of_character" checked="" value="N/O" tabindex="0" class="hidden">
+                            <label>Not Observed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="out_of_character" value="C" tabindex="0" class="hidden">
+                            <label>Competent</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="out_of_character" value="S" tabindex="0" class="hidden">
+                            <label>Superior</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="out_of_character" value="N/I" tabindex="0" class="hidden">
+                            <label>Needs Improvement</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="out_of_character" value="NRT" tabindex="0" class="hidden">
+                            <label>Not Responding To Training</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Evaluation Area: Basics</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="supervisorpresence" class="header mt-2"> Supervisor Presence:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="supervisorpresence" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="supervisorpresence" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="resource_management" class="header mt-2"> Resource Management:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="resource_management" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="resource_management" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="incident_management" class="header mt-2"> Incident Management:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="incident_management" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="incident_management" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="supervisor_requests" class="header mt-2">Supervisor Requests:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="supervisor_requests" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="supervisor_requests" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="assigning_units" class="header mt-2">Assigning Units:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="assigning_units" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="assigning_units" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="briefs_debriefs" class="header mt-2">Briefs and Debriefs:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="briefs_debriefs" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="briefs_debriefs" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="clearing_incidents" class="header mt-2">Clearing Outstanding Incidents:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="clearing_incidents" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="clearing_incidents" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="non_supervisory_work" class="header mt-2">Non-supervisory Police Work:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="non_supervisory_work" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="non_supervisory_work" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="role_of_supervisor" class="header mt-2">Role of a Supervisor:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="role_of_supervisor" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="role_of_supervisor" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>                
+                    <textarea id="basics_notes" placeholder="Basics notes here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Evaluation Area: Radio Procedure</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="comms_scclt" class="header mt-2"> Radio Communications (SCC & Local Tac):</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="comms_scclt" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="comms_scclt" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="comms_atac" class="header mt-2"> Radio Communications (Area Tac):</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="comms_atac" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="comms_atac" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="comms_external" class="header mt-2"> External Radio Communications (Departmental):</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="comms_external" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="comms_external" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>                
+                    <textarea id="radio_notes" placeholder="Radio procedure notes here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Evaluation Area: Internal Relations</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="disp_actions" class="header mt-2"> Disciplinary Actions:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="disp_actions" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="disp_actions" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="read_review" class="header mt-2"> Report Proof Reading And Reviewing:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="read_review" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="read_review" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="emp_misconduct" class="header mt-2"> Internal / Employee Misconduct:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="emp_misconduct" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="emp_misconduct" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="liaise_invs" class="header mt-2"> Liaising with Investigative Bureaus of the Department:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="liaise_invs" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="liaise_invs" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="onoffconduct" class="header mt-2"> On-duty & Off-duty Conduct:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="onoffconduct" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="onoffconduct" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>              
+                    <textarea id="int_relations_notes" placeholder="Internal relations notes here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Evaluation Area: Management</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="arrest_supervision" class="header mt-2"> Arrest Supervision:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="arrest_supervision" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="arrest_supervision" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="csi" class="header mt-2"> Crime Scene Investigation:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="csi" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="csi" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="contperm_setup" class="header mt-2"> Containment & Perimeter Setup:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="contperm_setup" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="contperm_setup" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="evidence_logging" class="header mt-2"> Evidence Logging:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="evidence_logging" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="evidence_logging" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>          
+                    <textarea id="management_notes" placeholder="Management notes here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Evaluation Area: Critical Incidents</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="vehicle_pursuits" class="header mt-2"> Vehicle Pursuits:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="vehicle_pursuits" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="vehicle_pursuits" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="foot_pursuits" class="header mt-2"> Foot Pursuits:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="foot_pursuits" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="foot_pursuits" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="ditc" class="header mt-2"> Deputy-Involved Traffic Collisions:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="ditc" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="ditc" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="barricaded_suspects" class="header mt-2"> Barricaded Suspects:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="barricaded_suspects" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="barricaded_suspects" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="inline fields">
+                        <label for="felony_stops" class="header mt-2"> Felony Stops:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="felony_stops" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="felony_stops" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="dis" class="header mt-2"> Deputy-Involved Shootings:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="dis" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="dis" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="active_shooter" class="header mt-2"> Active Shooter:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="active_shooter" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="active_shooter" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>  
+                    <textarea id="criticial_incidents_notes" placeholder="Critical incidents notes here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Evaluation Area: Use of Force</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="uof_prem" class="header mt-2"> Use Of Force Incident Preliminary Investigation:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="uof_prem" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="uof_prem" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="deploy_ltl" class="header mt-2"> Deployment Of Less-lethal Force:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="deploy_ltl" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="deploy_ltl" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="pit_spikes_auth" class="header mt-2"> Authorization of PIT maneuvers & tire deflation devices:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="pit_spikes_auth" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="pit_spikes_auth" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>          
+                    <textarea id="uof_notes" placeholder="Use of Force notes here..."></textarea>
+                </div>
+            </div> 
+            <div class="ui segment">
+                <h2>Evaluation Area: Outside Agencies</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="media_presence" class="header mt-2"> Media Presence:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="media_presence" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="media_presence" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="liaise_other_agency" class="header mt-2"> Liaising with Outer Agencies:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="liaise_other_agency" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="liaise_other_agency" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>        
+                    <textarea id="outside_agencies_notes" placeholder="Outside Agencies notes here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Evaluation Area: Criminal Law & Policies</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="warrants" class="header mt-2"> Search & Arrest Warrants:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="warrants" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="warrants" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="policies_procedures" class="header mt-2"> Departmental Policies & Procedures:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="policies_procedures" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="policies_procedures" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="criminal_law" class="header mt-2"> Criminal Law:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="criminal_law" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="criminal_law" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>      
+                    <textarea id="criminal_law_policies_notes" placeholder="Criminal Law & Policies notes here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Evaluation Area: (( Out of Character ))</h2>
+                <div class="field">
+                    <div class="inline fields">
+                        <label for="rp_mindset" class="header mt-2"> (( Roleplay & Mindset )):</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="rp_mindset" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="rp_mindset" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="affect_rp" class="header mt-2"> (( Affect On Roleplay )):</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="affect_rp" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="affect_rp" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="char_portrayal" class="header mt-2"> (( Character Development/portrayal )):</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="char_portrayal" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="char_portrayal" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                        <label for="ooc_demeanor" class="header mt-2"> (( OOC Demeanor )):</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="ooc_demeanor" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="ooc_demeanor" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="ooc_mgmt_supervising" class="header mt-2"> (( OOC Management & Supervising )):</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="ooc_mgmt_supervising" checked="" value="[cb][/cb]" tabindex="0" class="hidden">
+                                <label>No</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="ooc_mgmt_supervising" value="[cbc][/cbc]" tabindex="0" class="hidden">
+                                <label>Yes</label>
+                            </div>
+                        </div>
+                    </div>     
+                    <textarea id="ooc_notes" placeholder="OOC notes here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Report & Narrative</h2>
+                <div class="field">
+                    <label>Report & Narrative</label>
+                    <textarea id="documented" placeholder="Report & narrative here..."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Generator</h2>
+                <div class="field">
+                    <label>Output</label>
+                    <textarea id="output" readonly></textarea>
+                </div>
+                <div class="ui secondary button" id="submit">Submit</div>
+                <div class="ui primary button" id="copy">Copy to Clipboard</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js?v=3"></script>
+</body>
+</html>
