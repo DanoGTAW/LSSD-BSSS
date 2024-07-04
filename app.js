@@ -136,3 +136,9 @@ $('#copy').click(function() {
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
   navigator.clipboard.writeText(copyText.value);
 });
+
+$('#dark-mode-toggle').click(function() {
+  $('body').toggleClass('dark-mode');
+  let mode = $('body').hasClass('dark-mode') ? 'dark' : 'light';
+  document.cookie = 'darkMode=' + mode + ';path=/;expires=' + new Date(Date.now() + 7 * 86400 * 1000).toUTCString();
+});
