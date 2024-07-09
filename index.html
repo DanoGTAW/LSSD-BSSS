@@ -1023,7 +1023,22 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        console.log('Checking for Darkmode:', $);
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            var darkMode = document.cookie.split('; ').reduce((r, v) => {
+                const parts = v.split('=');
+                return parts[0] === 'darkMode' ? decodeURIComponent(parts[1]) : r;
+            }, '');
+            
+            if (darkMode === 'dark') {
+                $('body').addClass('dark-mode');
+            }
+        });
+    </script>
     <script src="app.js?v=3.2"></script>
 </body>
 </html>
